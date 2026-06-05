@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+}
+header .nav-bar1 {
+  display: flex;
+  align-items: center;
+}
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  padding: 8px;
+  box-sizing: content-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar2 {
+  display: flex;
+}
+.search {
+  display: flex;
+  border: 1px solid rgb(198, 198, 198);
+  width: 632px;
+  margin-right: 10px;
+  border-radius: 40px;
+  overflow: hidden;
+  padding-left: 16px;
+}
+.search input {
+  border: none;
+  width: 90%;
+  font-size: 16px;
+  color: rgb(117, 117, 117);
+}
+.search button {
+  border: none;
+  border-left: 1px solid rgb(198, 198, 198);
+  width: 10%;
+  background-color: rgb(248, 248, 248);
+}
+.nav-bar2 .mic {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  background-color: rgb(242, 242, 242);
+}
+.nav-bar3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.nav-bar3 button {
+  height: 36px;
+  width: 97px;
+  border-radius: 40px;
+  overflow: hidden;
+  font-size: 14px;
+  border: none;
+  background-color: rgb(242, 242, 242);
+}
+.create-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.create-btn p {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+.create-btn .add_2 {
+  width: 24px;
+  height: 24px;
+}
+.nav-bar3 img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
