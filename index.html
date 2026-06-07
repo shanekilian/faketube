@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FakeTube</title>
+    <title data-i18n="page.title">FakeTube</title>
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -18,11 +18,16 @@
           class="youtube-logo"
           src="https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg"
           alt="YouTube Icon"
+          data-i18n-aria="aria.youtubeIcon"
         />
       </div>
       <div class="nav-bar2">
         <div class="search">
-          <input type="text" placeholder="Search" />
+          <input
+            type="text"
+            placeholder="Search"
+            data-i18n-placeholder="nav.search"
+          />
           <button><i class="material-symbols-outlined">Search</i></button>
         </div>
         <button class="mic">
@@ -33,11 +38,15 @@
         <button>
           <div class="create-btn">
             <i class="material-symbols-outlined add_2">add_2</i>
-            <p>Create</p>
+            <p data-i18n="nav.create">Create</p>
           </div>
         </button>
         <span class="material-symbols-outlined">notifications</span>
-        <img src="./resources/youtube-profile-photo.png" alt="Profile Photo" />
+        <img
+          src="./resources/youtube-profile-photo.png"
+          alt="Profile Photo"
+          data-i18n-aria="aria.profilePhoto"
+        />
       </div>
     </header>
 
@@ -49,8 +58,12 @@
               class="sidebar-row"
               onclick="window.location.href = 'https://www.youtube.com/'"
             >
-              <img src="./resources/home-icon.svg" alt="Home Icon" />
-              <p>Home</p>
+              <img
+                src="./resources/home-icon.svg"
+                alt="Home Icon"
+                data-i18n-aria="aria.homeIcon"
+              />
+              <p data-i18n="sidebar.home">Home</p>
             </button>
           </section>
 
@@ -61,8 +74,12 @@
                 window.location.href = 'https://www.youtube.com/hashtag/shorts'
               "
             >
-              <img src="./resources/shorts.svg" alt="Shorts Icon" />
-              <p>Shorts</p>
+              <img
+                src="./resources/shorts.svg"
+                alt="Shorts Icon"
+                data-i18n-aria="aria.shortsIcon"
+              />
+              <p data-i18n="sidebar.shorts">Shorts</p>
             </button>
           </section>
         </div>
@@ -76,7 +93,7 @@
                   'https://www.youtube.com/feed/subscriptions'
               "
             >
-              <h4>Subscriptions</h4>
+              <h4 data-i18n="sidebar.subscriptions">Subscriptions</h4>
               <img src="./resources/arrow.svg" alt="arrow" />
             </button>
           </div>
@@ -157,7 +174,7 @@
           <section>
             <button class="sidebar-row">
               <img src="./resources/arrow-down.svg" alt="Down Arrow" />
-              <p>Show More</p>
+              <p data-i18n="sidebar.showMore">Show More</p>
             </button>
           </section>
         </div>
@@ -165,7 +182,7 @@
         <div class="you">
           <div class="you-heading">
             <button class="sidebar-row">
-              <h4>You</h4>
+              <h4 data-i18n="sidebar.you">You</h4>
               <img src="./resources/arrow.svg" alt="arrow" />
             </button>
           </div>
@@ -177,7 +194,7 @@
               "
             >
               <span class="material-symbols-outlined">History</span>
-              <p>History</p>
+              <p data-i18n="sidebar.history">History</p>
             </button>
           </section>
           <section>
@@ -189,32 +206,54 @@
               "
             >
               <span class="material-symbols-outlined">playlist_play</span>
-              <p>Playlist</p>
+              <p data-i18n="sidebar.playlist">Playlist</p>
             </button>
           </section>
           <section>
             <button class="sidebar-row">
               <span class="material-symbols-outlined">Schedule</span>
-              <p>Watch Later</p>
+              <p data-i18n="sidebar.watchLater">Watch Later</p>
             </button>
           </section>
           <section>
             <button class="sidebar-row">
-              <img src="./resources/like-icon.svg" alt="Thumbs Up" />
-              <p>Liked Videos</p>
+              <img
+                src="./resources/like-icon.svg"
+                alt="Thumbs Up"
+                data-i18n-aria="aria.thumbsUp"
+              />
+              <p data-i18n="sidebar.likedVideos">Liked Videos</p>
             </button>
           </section>
           <section>
             <button class="sidebar-row">
-              <img src="./resources/download.svg" alt="Download Icon" />
-              <p>Downloads</p>
+              <img
+                src="./resources/download.svg"
+                alt="Download Icon"
+                data-i18n-aria="aria.downloadIcon"
+              />
+              <p data-i18n="sidebar.downloads">Downloads</p>
+            </button>
+          </section>
+        </div>
+
+        <div class="language-toggle">
+          <section>
+            <button
+              type="button"
+              class="sidebar-row language-toggle-btn"
+              id="languageToggle"
+              aria-label="Switch to Afrikaans"
+            >
+              <span class="material-symbols-outlined">translate</span>
+              <p data-i18n="lang.switchLabel">Afrikaans</p>
             </button>
           </section>
         </div>
 
         <div class="explore">
           <div class="explore-heading">
-            <h4>Explore</h4>
+            <h4 data-i18n="sidebar.explore">Explore</h4>
           </div>
           <section>
             <button
@@ -225,7 +264,7 @@
                 src="./resources/music-note-icon.svg"
                 alt="Music Note Icon"
               />
-              <p>Music</p>
+              <p data-i18n="sidebar.music">Music</p>
             </button>
           </section>
 
@@ -235,7 +274,7 @@
               onclick="window.location.href = 'https://www.youtube.com/gaming'"
             >
               <img src="./resources/gaming-remote.svg" alt="Game Remote" />
-              <p>Gaming</p>
+              <p data-i18n="sidebar.gaming">Gaming</p>
             </button>
           </section>
 
@@ -248,7 +287,7 @@
               "
             >
               <img src="./resources/news-paper-icon.svg" alt="News Paper" />
-              <p>News</p>
+              <p data-i18n="sidebar.news">News</p>
             </button>
           </section>
 
@@ -261,7 +300,7 @@
               "
             >
               <span class="material-symbols-outlined">Trophy</span>
-              <p>Sport</p>
+              <p data-i18n="sidebar.sport">Sport</p>
             </button>
           </section>
 
@@ -273,19 +312,19 @@
               "
             >
               <img src="./resources/podcast-icon.svg" alt="Podcast Mic" />
-              <p>Podcast</p>
+              <p data-i18n="sidebar.podcast">Podcast</p>
             </button>
           </section>
           <section>
             <button class="sidebar-row">
               <img src="./resources/arrow-down.svg" alt="Down Arrow" />
-              <p>Show More</p>
+              <p data-i18n="sidebar.showMore">Show More</p>
             </button>
           </section>
         </div>
 
         <div class="youtube-info">
-          <h4>More from YouTube</h4>
+          <h4 data-i18n="sidebar.moreFromYoutube">More from YouTube</h4>
           <section>
             <button
               class="sidebar-row"
@@ -330,7 +369,7 @@
               "
             >
               <span class="material-symbols-outlined">Flag</span>
-              <p>Report History</p>
+              <p data-i18n="sidebar.reportHistory">Report History</p>
             </button>
           </section>
         </div>
@@ -338,39 +377,78 @@
         <footer>
           <div class="footer-top">
             <div class="top-1">
-              <a href="https://www.youtube.com/about/">About</a>
-              <a href="https://www.youtube.com/about/press/">Press</a>
-              <a href="https://www.youtube.com/about/copyright/">Copyright</a>
+              <a href="https://www.youtube.com/about/" data-i18n="footer.about"
+                >About</a
+              >
+              <a
+                href="https://www.youtube.com/about/press/"
+                data-i18n="footer.press"
+                >Press</a
+              >
+              <a
+                href="https://www.youtube.com/about/copyright/"
+                data-i18n="footer.copyright"
+                >Copyright</a
+              >
             </div>
             <div class="top-2">
-              <a href="https://www.youtube.com/t/contact_us/">Constact Us</a>
-              <a href="https://www.youtube.com/creators/">Creator</a>
-              <a href="https://www.youtube.com/ads/">Advertise</a>
+              <a
+                href="https://www.youtube.com/t/contact_us/"
+                data-i18n="footer.contactUs"
+                >Contact Us</a
+              >
+              <a
+                href="https://www.youtube.com/creators/"
+                data-i18n="footer.creator"
+                >Creator</a
+              >
+              <a
+                href="https://www.youtube.com/ads/"
+                data-i18n="footer.advertise"
+                >Advertise</a
+              >
             </div>
             <div class="top-3">
-              <a href="https://developers.google.com/youtube">Developer</a>
+              <a
+                href="https://developers.google.com/youtube"
+                data-i18n="footer.developer"
+                >Developer</a
+              >
             </div>
           </div>
           <div class="footer-mid">
             <div class="mid-1">
-              <a href="https://www.youtube.com/t/terms">Terms</a>
-              <a href="https://www.youtube.com/t/privacy">Privacy</a>
-              <a href="https://www.youtube.com/about/policies/"
+              <a href="https://www.youtube.com/t/terms" data-i18n="footer.terms"
+                >Terms</a
+              >
+              <a
+                href="https://www.youtube.com/t/privacy"
+                data-i18n="footer.privacy"
+                >Privacy</a
+              >
+              <a
+                href="https://www.youtube.com/about/policies/"
+                data-i18n="footer.policySafety"
                 >Policy & Safety</a
               >
             </div>
             <div class="mid-2">
               <a
                 href="https://www.youtube.com/howyoutubeworks?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen"
+                data-i18n="footer.howYoutubeWorks"
                 >How YouTube works</a
               >
             </div>
             <div class="mid-3">
-              <a href="https://www.youtube.com/new">Test new features</a>
+              <a
+                href="https://www.youtube.com/new"
+                data-i18n="footer.testFeatures"
+                >Test new features</a
+              >
             </div>
           </div>
           <div class="footer-bot">
-            <p>
+            <p data-i18n="footer.disclaimer">
               © 2026 FakeTube. This is only a clone for educational purposes
             </p>
           </div>
@@ -379,18 +457,18 @@
 
       <main>
         <div class="trending-categories">
-          <button class="p-btn">All</button>
-          <button class="s-btn">AI</button>
-          <button class="s-btn">Aviation</button>
-          <button class="s-btn">Gaming</button>
-          <button class="s-btn">Music</button>
-          <button class="s-btn">Weather</button>
-          <button class="s-btn">Roamnce</button>
-          <button class="s-btn">Action</button>
-          <button class="s-btn">Podcast</button>
-          <button class="s-btn">New To You</button>
-          <button class="s-btn">Watched</button>
-          <button class="s-btn">Happy</button>
+          <button class="p-btn" data-i18n="chip.all">All</button>
+          <button class="s-btn" data-i18n="chip.ai">AI</button>
+          <button class="s-btn" data-i18n="chip.aviation">Aviation</button>
+          <button class="s-btn" data-i18n="chip.gaming">Gaming</button>
+          <button class="s-btn" data-i18n="chip.music">Music</button>
+          <button class="s-btn" data-i18n="chip.weather">Weather</button>
+          <button class="s-btn" data-i18n="chip.romance">Romance</button>
+          <button class="s-btn" data-i18n="chip.action">Action</button>
+          <button class="s-btn" data-i18n="chip.podcast">Podcast</button>
+          <button class="s-btn" data-i18n="chip.newToYou">New To You</button>
+          <button class="s-btn" data-i18n="chip.watched">Watched</button>
+          <button class="s-btn" data-i18n="chip.happy">Happy</button>
         </div>
 
         <div class="video-feed">
@@ -407,6 +485,7 @@
                   src="./Images/thumbnail1.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -422,18 +501,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo12.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Best Overall Artist 2026</h6>
+                    <h6 data-i18n="video.title.artist2026">Best Overall Artist 2026</h6>
                     <img
                       src="./resources/options-icon.svg"
                       alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Pop Culture</p>
-                  <p class="video-stats">368K views • 2 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.artist2026">
+                    368K views • 2 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -449,6 +532,7 @@
                   src="./Images/thumbnail2.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -464,18 +548,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo13.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Cola Music Video</h6>
+                    <h6 data-i18n="video.title.cola">Cola Music Video</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Lana Del Rey</p>
-                  <p class="video-stats">552K views • 3 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.cola">
+                    552K views • 3 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -492,6 +580,7 @@
                   src="./Images/thumbnail3.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -507,15 +596,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo14.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Travel with me to Spain</h6>
-                    <img src="./resources/options-icon.svg" alt="" />
+                    <h6 data-i18n="video.title.spain">Travel with me to Spain</h6>
+                    <img
+                      src="./resources/options-icon.svg"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
+                    />
                   </div>
                   <p class="channel-name">Solo Travels</p>
-                  <p class="video-stats">10K views • 9 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.spain">
+                    10K views • 9 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -534,6 +630,7 @@
                   src="./Images/thumbnail4.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -549,18 +646,22 @@
                 <img
                   src="./Images/youtube-channel-profile4.png"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Worlds longest Runway</h6>
+                    <h6 data-i18n="video.title.runway">Worlds longest Runway</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Av Geek</p>
-                  <p class="video-stats">300 views • 1 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.runway">
+                    300 views • 1 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -576,6 +677,7 @@
                   src="./Images/thumbnail5.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -591,18 +693,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo15.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>SpongeBob Theme Song</h6>
+                    <h6 data-i18n="video.title.spongebob">SpongeBob Theme Song</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Cartoons</p>
-                  <p class="video-stats">834K views • 8 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.spongebob">
+                    834K views • 8 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -619,6 +725,7 @@
                   src="./Images/thumbnail6.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -634,18 +741,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo16.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Deep sleep and relax</h6>
+                    <h6 data-i18n="video.title.sleep">Deep sleep and relax</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Sleep ZZZZZ</p>
-                  <p class="video-stats">46K views • 5 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.sleep">
+                    46K views • 5 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -664,6 +775,7 @@
                   src="./Images/thumbnail1.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -679,18 +791,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo12.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Best Overall Artist 2026</h6>
+                    <h6 data-i18n="video.title.artist2026">Best Overall Artist 2026</h6>
                     <img
                       src="./resources/options-icon.svg"
                       alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Pop Culture</p>
-                  <p class="video-stats">368K views • 2 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.artist2026">
+                    368K views • 2 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -706,6 +822,7 @@
                   src="./Images/thumbnail2.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -721,18 +838,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo13.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Cola Music Video</h6>
+                    <h6 data-i18n="video.title.cola">Cola Music Video</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Lana Del Rey</p>
-                  <p class="video-stats">552K views • 3 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.cola">
+                    552K views • 3 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -749,6 +870,7 @@
                   src="./Images/thumbnail3.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -764,15 +886,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo14.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Travel with me to Spain</h6>
-                    <img src="./resources/options-icon.svg" alt="" />
+                    <h6 data-i18n="video.title.spain">Travel with me to Spain</h6>
+                    <img
+                      src="./resources/options-icon.svg"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
+                    />
                   </div>
                   <p class="channel-name">Solo Travels</p>
-                  <p class="video-stats">10K views • 9 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.spain">
+                    10K views • 9 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -791,6 +920,7 @@
                   src="./Images/thumbnail4.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -806,18 +936,22 @@
                 <img
                   src="./Images/youtube-channel-profile4.png"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Worlds longest Runway</h6>
+                    <h6 data-i18n="video.title.runway">Worlds longest Runway</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Av Geek</p>
-                  <p class="video-stats">300 views • 1 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.runway">
+                    300 views • 1 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -833,6 +967,7 @@
                   src="./Images/thumbnail5.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -848,18 +983,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo15.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>SpongeBob Theme Song</h6>
+                    <h6 data-i18n="video.title.spongebob">SpongeBob Theme Song</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Cartoons</p>
-                  <p class="video-stats">834K views • 8 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.spongebob">
+                    834K views • 8 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -876,6 +1015,7 @@
                   src="./Images/thumbnail6.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -891,18 +1031,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo16.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Deep sleep and relax</h6>
+                    <h6 data-i18n="video.title.sleep">Deep sleep and relax</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Sleep ZZZZZ</p>
-                  <p class="video-stats">46K views • 5 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.sleep">
+                    46K views • 5 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -921,6 +1065,7 @@
                   src="./Images/thumbnail1.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -936,18 +1081,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo12.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Best Overall Artist 2026</h6>
+                    <h6 data-i18n="video.title.artist2026">Best Overall Artist 2026</h6>
                     <img
                       src="./resources/options-icon.svg"
                       alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Pop Culture</p>
-                  <p class="video-stats">368K views • 2 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.artist2026">
+                    368K views • 2 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -963,6 +1112,7 @@
                   src="./Images/thumbnail2.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -978,18 +1128,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo13.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Cola Music Video</h6>
+                    <h6 data-i18n="video.title.cola">Cola Music Video</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Lana Del Rey</p>
-                  <p class="video-stats">552K views • 3 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.cola">
+                    552K views • 3 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1006,6 +1160,7 @@
                   src="./Images/thumbnail3.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1021,15 +1176,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo14.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Travel with me to Spain</h6>
-                    <img src="./resources/options-icon.svg" alt="" />
+                    <h6 data-i18n="video.title.spain">Travel with me to Spain</h6>
+                    <img
+                      src="./resources/options-icon.svg"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
+                    />
                   </div>
                   <p class="channel-name">Solo Travels</p>
-                  <p class="video-stats">10K views • 9 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.spain">
+                    10K views • 9 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1048,6 +1210,7 @@
                   src="./Images/thumbnail4.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1063,18 +1226,22 @@
                 <img
                   src="./Images/youtube-channel-profile4.png"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Worlds longest Runway</h6>
+                    <h6 data-i18n="video.title.runway">Worlds longest Runway</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Av Geek</p>
-                  <p class="video-stats">300 views • 1 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.runway">
+                    300 views • 1 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1090,6 +1257,7 @@
                   src="./Images/thumbnail5.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1105,18 +1273,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo15.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>SpongeBob Theme Song</h6>
+                    <h6 data-i18n="video.title.spongebob">SpongeBob Theme Song</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Cartoons</p>
-                  <p class="video-stats">834K views • 8 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.spongebob">
+                    834K views • 8 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1133,6 +1305,7 @@
                   src="./Images/thumbnail6.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1148,18 +1321,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo16.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Deep sleep and relax</h6>
+                    <h6 data-i18n="video.title.sleep">Deep sleep and relax</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Sleep ZZZZZ</p>
-                  <p class="video-stats">46K views • 5 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.sleep">
+                    46K views • 5 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1178,6 +1355,7 @@
                   src="./Images/thumbnail1.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1193,18 +1371,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo12.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Best Overall Artist 2026</h6>
+                    <h6 data-i18n="video.title.artist2026">Best Overall Artist 2026</h6>
                     <img
                       src="./resources/options-icon.svg"
                       alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Pop Culture</p>
-                  <p class="video-stats">368K views • 2 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.artist2026">
+                    368K views • 2 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1220,6 +1402,7 @@
                   src="./Images/thumbnail2.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1235,18 +1418,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo13.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Cola Music Video</h6>
+                    <h6 data-i18n="video.title.cola">Cola Music Video</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Lana Del Rey</p>
-                  <p class="video-stats">552K views • 3 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.cola">
+                    552K views • 3 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1263,6 +1450,7 @@
                   src="./Images/thumbnail3.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1278,15 +1466,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo14.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Travel with me to Spain</h6>
-                    <img src="./resources/options-icon.svg" alt="" />
+                    <h6 data-i18n="video.title.spain">Travel with me to Spain</h6>
+                    <img
+                      src="./resources/options-icon.svg"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
+                    />
                   </div>
                   <p class="channel-name">Solo Travels</p>
-                  <p class="video-stats">10K views • 9 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.spain">
+                    10K views • 9 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1305,6 +1500,7 @@
                   src="./Images/thumbnail4.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1320,18 +1516,22 @@
                 <img
                   src="./Images/youtube-channel-profile4.png"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Worlds longest Runway</h6>
+                    <h6 data-i18n="video.title.runway">Worlds longest Runway</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Av Geek</p>
-                  <p class="video-stats">300 views • 1 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.runway">
+                    300 views • 1 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1347,6 +1547,7 @@
                   src="./Images/thumbnail5.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1362,18 +1563,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo15.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>SpongeBob Theme Song</h6>
+                    <h6 data-i18n="video.title.spongebob">SpongeBob Theme Song</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Cartoons</p>
-                  <p class="video-stats">834K views • 8 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.spongebob">
+                    834K views • 8 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1390,6 +1595,7 @@
                   src="./Images/thumbnail6.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1405,18 +1611,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo16.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Deep sleep and relax</h6>
+                    <h6 data-i18n="video.title.sleep">Deep sleep and relax</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Sleep ZZZZZ</p>
-                  <p class="video-stats">46K views • 5 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.sleep">
+                    46K views • 5 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1435,6 +1645,7 @@
                   src="./Images/thumbnail1.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1450,18 +1661,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo12.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Best Overall Artist 2026</h6>
+                    <h6 data-i18n="video.title.artist2026">Best Overall Artist 2026</h6>
                     <img
                       src="./resources/options-icon.svg"
                       alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Pop Culture</p>
-                  <p class="video-stats">368K views • 2 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.artist2026">
+                    368K views • 2 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1477,6 +1692,7 @@
                   src="./Images/thumbnail2.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1492,18 +1708,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo13.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Cola Music Video</h6>
+                    <h6 data-i18n="video.title.cola">Cola Music Video</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Lana Del Rey</p>
-                  <p class="video-stats">552K views • 3 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.cola">
+                    552K views • 3 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1520,6 +1740,7 @@
                   src="./Images/thumbnail3.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1535,15 +1756,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo14.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Travel with me to Spain</h6>
-                    <img src="./resources/options-icon.svg" alt="" />
+                    <h6 data-i18n="video.title.spain">Travel with me to Spain</h6>
+                    <img
+                      src="./resources/options-icon.svg"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
+                    />
                   </div>
                   <p class="channel-name">Solo Travels</p>
-                  <p class="video-stats">10K views • 9 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.spain">
+                    10K views • 9 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1562,6 +1790,7 @@
                   src="./Images/thumbnail4.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1577,18 +1806,22 @@
                 <img
                   src="./Images/youtube-channel-profile4.png"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Worlds longest Runway</h6>
+                    <h6 data-i18n="video.title.runway">Worlds longest Runway</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Av Geek</p>
-                  <p class="video-stats">300 views • 1 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.runway">
+                    300 views • 1 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1604,6 +1837,7 @@
                   src="./Images/thumbnail5.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1619,18 +1853,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo15.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>SpongeBob Theme Song</h6>
+                    <h6 data-i18n="video.title.spongebob">SpongeBob Theme Song</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Cartoons</p>
-                  <p class="video-stats">834K views • 8 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.spongebob">
+                    834K views • 8 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1647,6 +1885,7 @@
                   src="./Images/thumbnail6.jpeg"
                   class="video-thumbnail"
                   alt="Video Thumbnail"
+                  data-i18n-aria="aria.videoThumbnail"
                 />
 
                 <video
@@ -1662,18 +1901,22 @@
                 <img
                   src="./Images/youtube-video-profile-photo16.jpeg"
                   alt="Channel Icon"
+                  data-i18n-aria="aria.channelIcon"
                   class="channel-icon"
                 />
                 <div class="video-text">
                   <div class="heading">
-                    <h6>Deep sleep and relax</h6>
+                    <h6 data-i18n="video.title.sleep">Deep sleep and relax</h6>
                     <img
                       src="./resources/options-icon.svg"
-                      alt="options-icon"
+                      alt="Options Icon"
+                      data-i18n-aria="aria.optionsIcon"
                     />
                   </div>
                   <p class="channel-name">Sleep ZZZZZ</p>
-                  <p class="video-stats">46K views • 5 days ago</p>
+                  <p class="video-stats" data-i18n="video.stats.sleep">
+                    46K views • 5 days ago
+                  </p>
                 </div>
               </div>
             </section>
@@ -1681,5 +1924,44 @@
         </div>
       </main>
     </div>
+    <div
+      id="greetingOverlay"
+      class="greeting-overlay"
+      aria-hidden="false"
+    >
+      <div
+        class="greeting-modal"
+        role="dialog"
+        aria-labelledby="greetingHeading"
+        aria-modal="true"
+      >
+        <span class="material-symbols-outlined greeting-icon">waving_hand</span>
+        <h2 id="greetingHeading" class="greeting-heading"></h2>
+        <p id="greetingFunFact" class="greeting-fun-fact"></p>
+        <div class="greeting-actions">
+          <button
+            type="button"
+            id="greetingLangToggle"
+            class="greeting-lang-btn"
+            aria-label="Switch to Afrikaans"
+          >
+            <span class="material-symbols-outlined">translate</span>
+            <span data-i18n="lang.switchLabel">Afrikaans</span>
+          </button>
+          <button
+            type="button"
+            id="greetingClose"
+            class="greeting-close-btn"
+            data-i18n="greeting.close"
+          >
+            Got it
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./translations.js"></script>
+    <script src="./i18n.js"></script>
+    <script src="./greeting.js"></script>
   </body>
 </html>

@@ -435,3 +435,186 @@ footer p {
   background-color: rgb(220, 220, 220);
   cursor: pointer;
 }
+
+/* --- I18N / LAYOUT SAFETY --- */
+.sidebar-row,
+aside section,
+.top-section section {
+  min-height: 40px;
+  height: auto;
+}
+
+.sidebar-row {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+aside .sidebar-row > p {
+  max-width: calc(100% - 48px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nav-bar3 button {
+  min-width: 97px;
+  width: auto;
+  padding: 0 12px;
+}
+
+.trending-categories {
+  min-height: 56px;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  align-items: center;
+}
+
+.heading h6 {
+  flex: 1;
+  min-width: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.heading img {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.video-text {
+  min-width: 0;
+  flex: 1;
+}
+
+.language-toggle {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 4px 0;
+}
+
+footer a,
+footer p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- GREETING MODAL --- */
+body.greeting-open {
+  overflow: hidden;
+}
+
+.greeting-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: rgba(0, 0, 0, 0.45);
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+
+.greeting-overlay--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.greeting-modal {
+  width: 100%;
+  max-width: 420px;
+  padding: 28px 28px 24px;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  text-align: center;
+  transform: scale(1) translateY(0);
+  animation: greeting-enter 0.35s ease-out;
+}
+
+@keyframes greeting-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.greeting-icon {
+  font-size: 40px;
+  color: rgb(255, 0, 0);
+  margin-bottom: 8px;
+}
+
+.greeting-heading {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(15, 15, 15);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.greeting-fun-fact {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(96, 96, 96);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.greeting-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.greeting-lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 36px;
+  padding: 0 14px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  background-color: rgb(242, 242, 242);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(15, 15, 15);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.greeting-lang-btn:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.greeting-lang-btn .material-symbols-outlined {
+  font-size: 20px;
+}
+
+.greeting-close-btn {
+  height: 36px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 40px;
+  background-color: rgb(15, 15, 15);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.greeting-close-btn:hover {
+  background-color: rgb(60, 60, 60);
+}
