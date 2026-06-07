@@ -398,6 +398,10 @@ footer p {
   display: flex;
   justify-content: space-evenly;
 }
+.video-row button {
+  border: none;
+  background-color: transparent;
+}
 
 .video-container img {
   width: 100%;
