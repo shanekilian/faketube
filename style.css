@@ -682,3 +682,65 @@ body.greeting-open {
 .greeting-close-btn:hover {
   background-color: rgb(60, 60, 60);
 }
+
+/* ---TABLET_CSS--- */
+@media screen and (min-width: 481px) and (max-width: 1100px) {
+  .mini-sidebar {
+    display: none;
+  }
+
+  .large-sidebar {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 240px;
+    height: calc(100vh - 56px);
+    background-color: white;
+    z-index: 100;
+  }
+
+  #sidebar-toggle:checked ~ .mainbody .large-sidebar {
+    display: block;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .nav-bar1,
+  .nav-bar3 {
+    flex-shrink: 0;
+  }
+
+  .nav-bar2 {
+    flex: 1;
+    min-width: 0;
+    margin: 0px 16px;
+  }
+
+  .search {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .video-feed {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .video-row {
+    display: contents;
+  }
+
+  .video-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .trending-categories {
+    position: static;
+    height: auto;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+}
