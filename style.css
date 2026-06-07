@@ -117,7 +117,21 @@ header .nav-bar1 {
   background-color: rgb(255, 255, 255);
   z-index: 10;
   padding-left: 12px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
 }
+
+.trending-categories::-webkit-scrollbar {
+  display: none;
+}
+
+.trending-categories button {
+  flex-shrink: 0;
+}
+
 .trending-categories .p-btn {
   border: none;
   background-color: black;
@@ -736,13 +750,6 @@ body.greeting-open {
     width: 100%;
     min-width: 0;
   }
-
-  .trending-categories {
-    position: static;
-    height: auto;
-    flex-wrap: wrap;
-    overflow-x: hidden;
-  }
 }
 
 /* ---MOBILE_VERSION--- */
@@ -782,13 +789,6 @@ body.greeting-open {
   .video-card {
     width: 100%;
     min-width: 0;
-  }
-
-  ..trending-categories {
-    position: static;
-    height: auto;
-    flex-wrap: wrap;
-    overflow-x: hidden;
   }
 
   .nav-bar2 {
