@@ -140,6 +140,13 @@ header .nav-bar1 {
 }
 
 /* ---MAINBODY--- */
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none !important;
+}
+
 .mainbody {
   display: flex;
   height: calc(100vh - 56px);
@@ -328,6 +335,7 @@ footer p {
 .video-feed p {
   font-size: 14px;
   font-weight: 400;
+  margin-top: 2px;
   color: rgb(96, 96, 96);
 }
 
