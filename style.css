@@ -153,6 +153,70 @@ a:active {
   overflow: hidden;
 }
 
+/* ---SIDEBAR_TOGGLE--- */
+.sidebar-toggle {
+  display: none;
+}
+
+.nav-bar1 label {
+  cursor: pointer;
+}
+
+#sidebar-toggle:checked ~ .mainbody .mini-sidebar {
+  display: none;
+}
+
+#sidebar-toggle:checked ~ .mainbody .large-sidebar {
+  display: block;
+}
+
+/* ---MINI_SIDEBAR--- */
+.mini-sidebar {
+  width: 72px;
+  padding-top: 4px;
+  overflow: hidden;
+}
+
+.mini-sidebar button {
+  width: 64px;
+  height: 74px;
+  margin: 0px 4px;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.mini-sidebar button:hover {
+  background-color: rgb(242, 242, 242);
+  cursor: pointer;
+}
+
+.mini-sidebar img,
+.mini-sidebar span {
+  width: 24px;
+  height: 24px;
+  margin: 0px;
+  font-size: 24px;
+}
+
+.mini-sidebar p {
+  max-width: 64px;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---LARGE_SIDEBAR--- */
+.large-sidebar {
+  display: none;
+}
+
 /* ---ASIDE--- */
 aside {
   width: 240px;
@@ -197,7 +261,7 @@ aside span {
 }
 
 main {
-  width: calc(100vw - 240px);
+  min-width: 0;
   flex-grow: 1;
   height: 100%;
   overflow-y: auto;

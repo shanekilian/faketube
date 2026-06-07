@@ -11,9 +11,13 @@
     />
   </head>
   <body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle" />
+
     <header>
       <div class="nav-bar1">
-        <span class="material-symbols-outlined menu-icon">menu</span>
+        <label for="sidebar-toggle">
+          <span class="material-symbols-outlined menu-icon">menu</span>
+        </label>
         <img
           class="youtube-logo"
           src="https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg"
@@ -51,7 +55,38 @@
     </header>
 
     <div class="mainbody">
-      <aside>
+      <aside class="mini-sidebar">
+        <button onclick="window.location.href = 'https://www.youtube.com/'">
+          <img src="./resources/home-icon.svg" alt="Home Icon" />
+          <p data-i18n="sidebar.home">Home</p>
+        </button>
+
+        <button
+          onclick="
+            window.location.href = 'https://www.youtube.com/hashtag/shorts'
+          "
+        >
+          <img src="./resources/shorts.svg" alt="Shorts Icon" />
+          <p data-i18n="sidebar.shorts">Shorts</p>
+        </button>
+
+        <button
+          onclick="
+            window.location.href =
+              'https://www.youtube.com/feed/subscriptions'
+          "
+        >
+          <span class="material-symbols-outlined">subscriptions</span>
+          <p data-i18n="sidebar.subscriptions">Subscriptions</p>
+        </button>
+
+        <button>
+          <span class="material-symbols-outlined">account_circle</span>
+          <p data-i18n="sidebar.you">You</p>
+        </button>
+      </aside>
+
+      <aside class="large-sidebar">
         <div class="top-section">
           <section>
             <button
